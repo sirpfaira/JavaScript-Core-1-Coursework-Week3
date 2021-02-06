@@ -15,7 +15,13 @@
   
 */
 
-function colonisers() {}
+function colonisers(familiesArr) {
+  let stayingFamilies = [];
+  familiesArr.forEach((family) => {
+    if (family.startsWith("A") && family.includes("family")) stayingFamilies.push(family);
+  });
+  return stayingFamilies;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
